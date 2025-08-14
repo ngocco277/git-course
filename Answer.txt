@@ -1,0 +1,11 @@
+A: 
+- Câu lệnh để cài đặt email: git config --global user.email 
+- Câu lệnh để cài đặt name: git config --global user.name
+
+B: 
+- git config --global user.name "PW - Co Nguyen"
+
+C:
+- git commit -m "init project"
+- git remote add origin git@github.com:ngocco277/git-course.git
+- git push origin main
