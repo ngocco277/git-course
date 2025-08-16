@@ -1,0 +1,21 @@
+BÀI TẬP 1: 
+
+git init => khởi tạo 1 thư mục được quản lý bởi Git và sẽ tạo ra 3 vùng nhớ là: Working Directory, Staging Area, Repository 
+git add <file_name> =>  là sẽ add 1 file ở vùng Working Directory sang vùng Staging Area.
+git add . => lấy tất cả các file ở vùng Working Directory sang vùng Staging Area.
+git commit -m “message”. => Sẽ tạo ra 1 phiên bản với các file đã có ở vùng Staging Area.
+
+BÀI TẬP 2. Hãy tưởng tượng có 1 folder lesson-2 mới được tạo. Hãy liệt kê các file theo từng
+vùng sau khi thao tác một loạt các lệnh sau (sẽ rất tuyệt nếu bạn không chạy lệnh trên
+máy thật, mà bạn suy nghĩ trong đầu để ra được kết quả; bạn sẽ nhớ rất lâu đấy ^^):
+a. Tạo 3 file: file1, file2, file3
+b. Chạy lệnh: git init 
+    => git sẽ tạo ra 3 vùng là Working Directory, Staging Area, Repository, và các file1, file2, file3 sẽ nằm ở vùng Working Directory 
+c. Chạy lệnh: git commit -m”init project” 
+    => Chạy được lệnh nhưng sẽ không có phiên bản nào được tạo, bởi vì chưa chạy lệnh git add, để add các file từ vùng Working Directory sang Staging Area.
+d. Chạy lệnh: git add file1 
+    => file1 từ vùng Working Directory sẽ được add vào vùng Staging Area
+e. Chạy lệnh: git commit -m”add file1” 
+    => file sẽ được chuyển từ vùng Staging Area sang vùng Repository và tạo ra được phiên bản.
+f. Chạy lệnh: git commit -m”add file” 
+    => Chạy được lệnh nhưng sẽ không có phiên bản nào được tạo, bởi vì vùng Staging Area không có file nào, tương tự câu C.
